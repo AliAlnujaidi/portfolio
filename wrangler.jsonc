@@ -1,0 +1,11 @@
+{
+  // Static site on Cloudflare Workers static assets. Change `name` and `routes` for your own domain.
+  "name": "portfolio",
+  "compatibility_date": "2026-10-01",
+  "assets": { "directory": "./out", "html_handling": "auto-trailing-slash", "not_found_handling": "404-page" },
+  "workers_dev": false,
+  "routes": [
+    { "pattern": "alialnujaidi.com", "custom_domain": true },
+    { "pattern": "www.alialnujaidi.com", "custom_domain": true }
+  ]
+}
